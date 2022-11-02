@@ -9,7 +9,7 @@ interface TooltipContent extends TooltipContentProps {
 export function TooltipContent({ children, ...props }: TooltipContent) {
   return (
     <TooltipRadix.Portal>
-      <TooltipRadix.Content {...props} className="bg-zinc-800 text-zinc-100 p-4 rounded border border-zinc-700 text-sm leading-tighter max-w-xs">
+      <TooltipRadix.Content {...props} className="bg-zinc-800 p-4 rounded border border-zinc-700 text-sm leading-tighter max-w-xs">
         {children}
         <TooltipArrow />
       </TooltipRadix.Content>
