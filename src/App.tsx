@@ -1,8 +1,8 @@
 import { useState } from "react"
 import { CreditCard } from "./components/CreditCard";
 import { Info } from "phosphor-react";
-import { Tooltip, TooltipTrigger } from "./components/Tooltip";
-import { TooltipContent } from "./components/Tooltip/TooltipContent";
+import { Popover, PopoverTrigger } from "./components/Popover";
+import { PopoverContent } from "./components/Popover/PopoverContent";
 
 export function App() {
   const [number, setNumber] = useState("")
@@ -13,7 +13,6 @@ export function App() {
     .replace(/(\d{4})(\d)/, '$1 $2')
     .replace(/(\d{4})(\d)/, '$1 $2')
     .replace(/(-\d{4})\d+?$/, '$1'); // Allow only digits
-    // number = number.replace(/(\d{4})/g, "$1 ")
     setNumber(number)
 
     return number
@@ -25,11 +24,11 @@ export function App() {
         <h1 className="mr-4 text-xl sm:text-2xl md:text-3xl font-bold">
           Credit Card - Luhn's Algorithm
         </h1>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <Info size={24} className="hover:opacity-60 transition-opacity" />
-          </TooltipTrigger>
-          <TooltipContent side="left" sideOffset={5}>
+        <Popover>
+          <PopoverTrigger asChild>
+            <Info size={20} className="hover:opacity-60 transition-opacity" />
+          </PopoverTrigger>
+          <PopoverContent side="left" sideOffset={5}>
             Type a credit card number to verify if is valid using the Luhn's Algorithm. <br />
             <a 
               href="https://gocardless.com/guides/posts/what-is-Luhn's-algorithm/" 
@@ -39,8 +38,8 @@ export function App() {
             >
               Learn more about Luhn's Algorithm.
             </a>
-          </TooltipContent>
-        </Tooltip>
+          </PopoverContent>
+        </Popover>
       </div>
       <div className="p-6 rounded flex flex-col w-full sm:w-3/4 max-w-[750px] items-center bg-zinc-800 border border-zinc-700">
         <div className="w-full">
