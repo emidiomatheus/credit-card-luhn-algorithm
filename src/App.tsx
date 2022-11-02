@@ -65,6 +65,7 @@ export function App() {
             maxLength={19}
             id="number"
             autoFocus
+            inputMode="numeric"
           />
         </form>
       </div>
