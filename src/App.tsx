@@ -23,21 +23,21 @@ export function App() {
     <main className="flex flex-col h-screen items-center sm:justify-center">
       <div className="mb-8 flex items-center mt-6 sm:mt-0">
         <h1 className="mr-4 text-xl sm:text-2xl md:text-3xl font-bold">
-          Credit Card - Luhn Algorithm
+          Credit Card - Luhn's Algorithm
         </h1>
         <Tooltip>
           <TooltipTrigger asChild>
             <Info size={24} className="hover:opacity-60 transition-opacity" />
           </TooltipTrigger>
           <TooltipContent side="right" sideOffset={5}>
-            Type a credit card number to verify if is valid using the Luhn Algorithm. <br />
+            Type a credit card number to verify if is valid using the Luhn's Algorithm. <br />
             <a 
-              href="https://gocardless.com/guides/posts/what-is-luhn-algorithm/" 
+              href="https://gocardless.com/guides/posts/what-is-Luhn's-algorithm/" 
               className="text-blue-300 hover:text-blue-400 transition-colors inline-block mt-1"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Learn more about Luhn Algorithm.
+              Learn more about Luhn's Algorithm.
             </a>
           </TooltipContent>
         </Tooltip>
