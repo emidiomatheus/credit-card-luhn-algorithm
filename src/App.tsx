@@ -29,7 +29,7 @@ export function App() {
           <TooltipTrigger asChild>
             <Info size={24} className="hover:opacity-60 transition-opacity" />
           </TooltipTrigger>
-          <TooltipContent side="right" sideOffset={5}>
+          <TooltipContent side="left" sideOffset={5}>
             Type a credit card number to verify if is valid using the Luhn's Algorithm. <br />
             <a 
               href="https://gocardless.com/guides/posts/what-is-Luhn's-algorithm/" 
