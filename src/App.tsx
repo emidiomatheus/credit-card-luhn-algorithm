@@ -31,7 +31,7 @@ export function App() {
           <PopoverContent side="left" sideOffset={5}>
             Type a credit card number to verify if is valid using the Luhn's Algorithm. <br />
             <a 
-              href="https://gocardless.com/guides/posts/what-is-Luhn's-algorithm/" 
+              href="https://gocardless.com/guides/posts/what-is-luhn-algorithm/" 
               className="text-blue-300 hover:text-blue-400 transition-colors inline-block mt-1"
               target="_blank"
               rel="noopener noreferrer"
